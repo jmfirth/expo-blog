@@ -30,10 +30,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "gh-pages-deploy",
-    "clean-source": "rimraf README.md src public package.json .babelrc .watchmanconfig exp.json yarn.lock .expo"
+    "clean-source": "rimraf README.md src public build package.json .babelrc .watchmanconfig exp.json yarn.lock .expo"
   },
   "gh-pages-deploy": {
-    "staticpath": "/static",
+    "staticpath": "build",
     "prep": [
       "build"
     ],
