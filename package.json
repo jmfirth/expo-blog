@@ -18,6 +18,7 @@
     "react-router": "next",
     "react-router-dom": "next",
     "react-router-native": "next",
+    "uglify-js": "2.8.5",
     "victory": "^0.18.0",
     "victory-native": "^0.6.0"
   },
