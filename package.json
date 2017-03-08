@@ -9,6 +9,7 @@
   "dependencies": {
     "@exponent/vector-icons": "^4.0.0",
     "exponent": "^14.0.0",
+    "gh-pages-deploy": "^0.4.2",
     "preact": "^7.2.0",
     "preact-compat": "^3.13.1",
     "react": "^15.4.2",
@@ -26,6 +27,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "build",
+    "prep": [
+      "build"
+    ],
+    "post": [
+      "clean-source"
+    ],
+    "noprompt": false
   }
 }
